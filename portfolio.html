@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>WebStudio | Портфолио</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -27,8 +27,16 @@
             </nav> 
         
             <ul class="auth-nav list">
-                <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                <li class="item"><a class="link" href="mailto:info@devstudio.com">
+                    <svg class="link-icon">
+                        <use href="./images/sprite.svg#icon-letter"></use>
+                    </svg>
+                    info@devstudio.com</a></li>
+                <li class="item"><a class="link" href="tel:+380961111111">
+                    <svg class="link-icon">
+                        <use href="./images/sprite.svg#icon-phone"></use>
+                    </svg>
+                    +38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -137,17 +145,52 @@
     </main>
     <!--Футер-->
     <footer class="footer">
-        <div class="container">
-            <a href="./index.html" class="logo">
-                Web<span class="whitelogo">Studio</span> 
-            </a>     
+        <div class="container block">
+            <div class="footer-contacts">
+                <a href="./index.html" class="logo">
+                    Web<span class="whitelogo">Studio</span> 
+                </a>     
+            
+                <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
         
-            <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
-    
-            <ul class="auth list">
-                <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-            </ul>
+                <ul class="auth list">
+                    <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                    <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3 class="social-title">присоединяйтесь</h3>
+                <ul class="social list">
+                    <li class="social-item">
+                        <a class="footer-social-link" href="">
+                            <svg class="social-icon">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="footer-social-link" href="">
+                            <svg class="social-icon">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="footer-social-link" href="">
+                            <svg class="social-icon">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="footer-social-link" href="">
+                            <svg class="social-icon">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 
