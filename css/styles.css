@@ -118,14 +118,27 @@ header {
 
 /* Hero */
 .hero {
-  background-color: var(--secondary-bg-color);
-  text-align: center;
+  background-color: rgba(47, 48, 58, 0.4);
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Overlay.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section {
+  width: 696px;
+  text-align: center;
 }
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+
   color: var(--white-bg-color);
 
   font-weight: 900;
@@ -198,7 +211,31 @@ header {
 .advantages-item {
   width: calc((1170px - 90px) / 4);
 }
-.advantages-item .title {
+.advantages-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  background-color: var(--crew-bg-color);
+}
+.icon-antenna::before {
+  background-image: url('../images/antenna.svg');
+}
+.icon-clock::before {
+  background-image: url('../images/clock.svg');
+}
+.icon-laptop::before {
+  background-image: url('../images/laptop.svg');
+}
+.icon-astronaut::before {
+  background-image: url('../images/astronaut.svg');
+}
+.advantages-item-title {
   margin-top: 0;
   margin-bottom: 10px;
   color: var(--title-text-color);
